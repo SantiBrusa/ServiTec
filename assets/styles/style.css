@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: cadetblue;
+  width: auto;
+  height: 35vh;
+}
+
+header img {
+  width: 5vw;
+  height: auto;
+  margin: 1vw;
+}
+
+h1 {
+  color: #fff;
+  text-decoration: underline;
+  margin: 1vw;
+}
+
+ul {
+  list-style: none;
+  margin: 1vw;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+}
+
+footer {
+  background-color: cadetblue;
+  width: auto;
+  height: 20vh;
+}
+
+footer h2 {
+  color: #fff;
+  padding: 1vw;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+}
+
+/* main index */
+
+.class-main {
+  background-color: rgb(150, 150, 150);
+}
+
+.class-main img {
+  width: 25vw;
+  height: auto;
+  margin: 1vh;
+}
+
+.class-main p {
+  padding: 1vh;
+  color: black;
+}
+
+/* main trabajos */
+
+.trab-main {
+  margin: 1vh;
+  background-color: rgb(150, 150, 150);
+}
+
+.trab-main h2 {
+  padding: 1vh;
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+.trab-main img {
+  width: 15vw;
+  height: auto;
+  margin: 1vh;
+}
+
+/* main Servicios */
+
+.serv-main {
+  width: auto;
+  height: 45vh;
+  background-color: rgb(150, 150, 150);
+}
+
+.serv-main h2 {
+  padding: 10px;
+}
+
+.serv-main ul {
+  list-style: inside;
+}
+
+/* main Conoce */
+
+.conoce-main {
+  width: auto;
+  height: 45vh;
+  background-color: rgb(150, 150, 150);
+}
+
+.conoce-main h2 {
+  padding: 20px;
+}
+
+.conoce-main p {
+  margin: 1vh 1vw;
+}
+
+/* main contacto */
+
+.contacto-main {
+  width: auto;
+  height: 45vh;
+  background-color: rgb(150, 150, 150);
+}
+
+.contacto-main form {
+  padding: 20px;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.contacto-main label,
+input,
+textarea {
+  margin: 1vh 1vw;
+  padding: 1vh;
+}
