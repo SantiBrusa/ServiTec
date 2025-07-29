@@ -5,9 +5,12 @@
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: cadetblue;
   width: auto;
-  height: 35vh;
+  height: auto;
 }
 
 header img {
@@ -25,41 +28,49 @@ h1 {
 ul {
   list-style: none;
   margin: 1vw;
+  display: flex;
 }
 
 header a {
   text-decoration: none;
   color: black;
   font-size: 1em;
+  margin: 10px;
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: cadetblue;
-  width: auto;
-  height: 20vh;
 }
 
 footer h2 {
   color: #fff;
   padding: 1vw;
+  margin: 20px;
 }
 
 footer a {
   text-decoration: none;
   color: black;
   font-size: 1em;
+  margin: 20px;
 }
 
 /* main index */
 
 .class-main {
+  display: flex;
+  width: auto;
+  height: 71vh;
   background-color: rgb(150, 150, 150);
 }
 
 .class-main img {
-  width: 25vw;
-  height: auto;
-  margin: 1vh;
+  width: auto;
+  height: 65vh;
+  margin: 20px;
 }
 
 .class-main p {
@@ -67,10 +78,19 @@ footer a {
   color: black;
 }
 
+.main-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
 /* main trabajos */
 
 .trab-main {
-  margin: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(150, 150, 150);
 }
 
@@ -78,19 +98,29 @@ footer a {
   padding: 1vh;
   font-size: 2em;
   text-decoration: underline;
+  margin: 20px;
 }
 
 .trab-main img {
   width: 15vw;
   height: auto;
-  margin: 1vh;
+  margin: 10px;
+}
+
+.trab-main ul {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* main Servicios */
 
 .serv-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: auto;
-  height: 45vh;
+  height: 71vh;
   background-color: rgb(150, 150, 150);
 }
 
@@ -99,34 +129,47 @@ footer a {
 }
 
 .serv-main ul {
+  display: flex;
+  flex-flow: column wrap;
   list-style: inside;
+}
+
+.serv-main li {
+  margin: 20px;
 }
 
 /* main Conoce */
 
 .conoce-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: auto;
-  height: 45vh;
+  height: 71vh;
   background-color: rgb(150, 150, 150);
 }
 
 .conoce-main h2 {
-  padding: 20px;
+  margin: 20px;
 }
 
 .conoce-main p {
-  margin: 1vh 1vw;
+  margin: 20px 250px;
 }
 
 /* main contacto */
 
 .contacto-main {
   width: auto;
-  height: 45vh;
+  height: 71vh;
   background-color: rgb(150, 150, 150);
 }
 
 .contacto-main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   text-decoration: underline;
   font-size: 1.2rem;
