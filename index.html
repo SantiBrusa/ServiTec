@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ServiTec - Home</title>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
 
@@ -19,44 +24,95 @@
 
       <h1>ServiTec</h1>
 
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
       <nav>
-        <ul>
-          <li>
-            <a href="./assets/pages/servicios.html">Servicios</a>
-          </li>
-          <li>
-            <a href="./assets/pages/trabajos.html">Trabajos</a>
-          </li>
-          <li>
-            <a href="./assets/pages/conoce.html">Conoce ServiTec</a>
-          </li>
-          <li>
-            <a href="./assets/pages/contacto.html">Contacto</a>
-          </li>
+        <ul id="menu">
+          <li><a href="./assets/pages/servicios.html">Servicios</a></li>
+          <li><a href="./assets/pages/trabajos.html">Trabajos</a></li>
+          <li><a href="./assets/pages/conoce.html">Conoce ServiTec</a></li>
+          <li><a href="./assets/pages/contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="class-main">
-      <img
+      <!-- <img
         src="./assets/img/Designer.jpeg"
         alt="img de carrusel"
         title="img de carrusel"
-      />
-      <div class="main-texts">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure incidunt
-          voluptas non assumenda, quisquam fugit voluptatibus velit obcaecati
-          sint nihil, dignissimos quidem laboriosam! Cum sed autem recusandae
-          tempore qui ab!
-        </p>
+      /> -->
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure incidunt
-          voluptas non assumenda, quisquam fugit voluptatibus velit obcaecati
-          sint nihil, dignissimos quidem laboriosam! Cum sed autem recusandae
-          tempore qui ab!
-        </p>
+      <div
+        id="carouselExampleControlsNoTouching"
+        class="carousel slide"
+        data-bs-touch="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/img/Designer.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/Designer (1).jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/img/Designer (2).jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div>
+        <ul class="main-texts">
+          <li>
+            <p>Mantenimiento PC´s - Consolas - Notebooks</p>
+          </li>
+          <li>
+            <p>Limpieza de Hardware</p>
+          </li>
+          <li>
+            <p>Cambio de Pasta Termica</p>
+          </li>
+          <li>
+            <p>Instalacion de Sistema Operativo</p>
+          </li>
+          <li>
+            <p>Instalacion de programas escenciales</p>
+          </li>
+        </ul>
       </div>
     </main>
 
@@ -81,5 +137,18 @@
       </nav>
     </footer>
     <!-- ctrl + } -->
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

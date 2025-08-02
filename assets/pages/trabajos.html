@@ -18,43 +18,41 @@
 
       <h1>ServiTec</h1>
 
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
       <nav>
-        <ul>
-          <li>
-            <a href="../pages/servicios.html">Servicios</a>
-          </li>
-          <li>
-            <a href="../pages/trabajos.html">Trabajos</a>
-          </li>
-          <li>
-            <a href="../pages/conoce.html">Conoce ServiTec</a>
-          </li>
-          <li>
-            <a href="../pages/contacto.html">Contacto</a>
-          </li>
+        <ul id="menu">
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./trabajos.html">Trabajos</a></li>
+          <li><a href="./conoce.html">Conoce ServiTec</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="trab-main">
       <h2>Trabajos</h2>
+      <div class="class-trab-img">
+        <img src="../img/trab.jpg" alt="trabajo 1" title="trabajo 1" />
 
-      <ul>
-        <li>
-          <img src="../img/trab.jpg" alt="trabajo 1" title="trabajo 1" />
-        </li>
-        <li>
-          <img src="../img/trab2.jpg" alt="trabajo 2" title="trabajo 2" />
-        </li>
-        <li>
-          <img src="../img/trab3.jpg" alt="trabajo 3" title="trabajo 3" />
-        </li>
-        <li>
-          <img src="../img/trab6.jpg" alt="trabajo 4,1" title="trabajo 4" />
+        <img src="../img/trab2.jpg" alt="trabajo 2" title="trabajo 2" />
 
-          <img src="../img/trab5.jpg" alt="trabajo 4,2" title="trabajo 4" />
-        </li>
-      </ul>
+        <img src="../img/trab3.jpg" alt="trabajo 3" title="trabajo 3" />
+
+        <img src="../img/trab6.jpg" alt="trabajo 4,1" title="trabajo 4" />
+
+        <img src="../img/trab5.jpg" alt="trabajo 4,2" title="trabajo 4" />
+
+        <img src="../img/trab7.jpg" alt="trabajo 5" title="trabajo 5" />
+
+        <img src="../img/trab8.jpg" alt="trabajo 6" title="trabajo 6" />
+
+        <img src="../img/trab9.jpg" alt="trabajo 7" title="trabajo 7" />
+      </div>
     </main>
 
     <footer>
@@ -77,5 +75,12 @@
         </ul>
       </nav>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>

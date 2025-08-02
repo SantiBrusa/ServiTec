@@ -19,20 +19,18 @@
 
       <h1>ServiTec</h1>
 
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
       <nav>
-        <ul>
-          <li>
-            <a href="../pages/servicios.html">Servicios</a>
-          </li>
-          <li>
-            <a href="../pages/trabajos.html">Trabajos</a>
-          </li>
-          <li>
-            <a href="../pages/conoce.html">Conoce ServiTec</a>
-          </li>
-          <li>
-            <a href="../pages/contacto.html">Contacto</a>
-          </li>
+        <ul id="menu">
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./trabajos.html">Trabajos</a></li>
+          <li><a href="./conoce.html">Conoce ServiTec</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -74,5 +72,12 @@
         </ul>
       </nav>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>

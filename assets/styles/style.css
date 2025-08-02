@@ -10,11 +10,11 @@ header {
   align-items: center;
   background-color: cadetblue;
   width: auto;
-  height: auto;
+  height: 10vh;
 }
 
 header img {
-  width: 5vw;
+  width: 4vw;
   height: auto;
   margin: 1vw;
 }
@@ -43,6 +43,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: cadetblue;
+  height: 10vh;
 }
 
 footer h2 {
@@ -63,8 +64,10 @@ footer a {
 .class-main {
   display: flex;
   width: auto;
-  height: 71vh;
+  height: 80vh;
   background-color: rgb(150, 150, 150);
+  justify-content: center;
+  flex-direction: row;
 }
 
 .class-main img {
@@ -81,8 +84,20 @@ footer a {
 .main-texts {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 20px;
+  margin: 150px 20px;
+}
+
+.carousel {
+  width: 50vw;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+  width: 100%;
+  height: 100%;
 }
 
 /* main trabajos */
@@ -101,15 +116,15 @@ footer a {
   margin: 20px;
 }
 
-.trab-main img {
-  width: 15vw;
-  height: auto;
-  margin: 10px;
+.class-trab-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 7vw;
 }
 
-.trab-main ul {
-  display: flex;
-  justify-content: space-between;
+.class-trab-img img {
+  width: 20vw;
 }
 
 /* main Servicios */
@@ -120,7 +135,7 @@ footer a {
   align-items: center;
   justify-content: center;
   width: auto;
-  height: 71vh;
+  height: 80vh;
   background-color: rgb(150, 150, 150);
 }
 
@@ -146,7 +161,7 @@ footer a {
   align-items: center;
   justify-content: center;
   width: auto;
-  height: 71vh;
+  height: 80vh;
   background-color: rgb(150, 150, 150);
 }
 
@@ -162,7 +177,7 @@ footer a {
 
 .contacto-main {
   width: auto;
-  height: 71vh;
+  height: 80vh;
   background-color: rgb(150, 150, 150);
 }
 
@@ -180,4 +195,148 @@ input,
 textarea {
   margin: 1vh 1vw;
   padding: 1vh;
+}
+
+/* Media Queries */
+
+@media (max-width: 944px) {
+  /* main */
+  .class-main {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+
+  .main-texts {
+    align-items: center;
+  }
+
+  header img {
+    width: 8vw;
+  }
+
+  .carousel {
+    width: 97vw;
+    height: 70vh;
+  }
+
+  /* Menú hamburguesa */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.4s;
+  }
+
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: cadetblue;
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    align-items: center;
+  }
+
+  header nav a {
+    font-size: 1.4rem;
+  }
+
+  header nav ul.show {
+    display: flex;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* Trabajos */
+
+  .class-trab-img {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .class-trab-img img {
+    width: 40vw;
+  }
+
+  /* conoce */
+
+  .conoce-main {
+    height: 80vh;
+  }
+
+  .conoce-main p {
+    margin: 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-right: 2vw;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.4s;
+  }
+
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: cadetblue;
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  header nav a {
+  }
+
+  header nav ul.show {
+    display: flex;
+  }
+
+  /* Main */
+
+  .carousel {
+    width: 97vw;
+    height: 50vh;
+  }
+
+  /* Trabajos */
+
+  .class-trab-img {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .class-trab-img img {
+    width: 60vw;
+  }
+
+  /* Conoce */
+
+  .conoce-main {
+    height: 80vh;
+  }
+
+  .conoce-main p {
+    margin: 20px 20px;
+  }
 }
