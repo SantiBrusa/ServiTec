@@ -1,0 +1,41 @@
+@use "variables" as v;
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: v.$colorsec;
+  .logito {
+    width: 5vw;
+  }
+  .title {
+    text-decoration: underline;
+    font-family: v.$font;
+    color: v.$font-color1;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    li {
+      .nav {
+        @extend %navegacion;
+        &:hover {
+          @extend %navegacion-hover;
+        }
+      }
+    }
+  }
+
+  @include v.mobile {
+    flex-direction: column;
+    .logito {
+      width: 6vh;
+    }
+    ul {
+      justify-content: start;
+      gap: 15px;
+    }
+  }
+}

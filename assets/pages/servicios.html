@@ -8,28 +8,23 @@
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <header>
+    <header class="flex">
       <a href="../../index.html"
         ><img
           src="../img/logopng.png"
           alt="Logo de ServiTec"
           title="Logo de ServiTec"
+          class="logito"
       /></a>
 
-      <h1>ServiTec</h1>
-
-      <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <h1 class="title">ServiTec</h1>
 
       <nav>
-        <ul id="menu">
-          <li><a href="./servicios.html">Servicios</a></li>
-          <li><a href="./trabajos.html">Trabajos</a></li>
-          <li><a href="./conoce.html">Conoce ServiTec</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
+        <ul>
+          <li><a href="./servicios.html" class="nav">Servicios</a></li>
+          <li><a href="./trabajos.html" class="nav">Trabajos</a></li>
+          <li><a href="./conoce.html" class="nav">Conoce ServiTec</a></li>
+          <li><a href="./contacto.html" class="nav">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -41,6 +36,10 @@
         <li>Limpieza Completa + Cambio de Pasta Termica.</li>
         <li>Armado y mejora de equipos.</li>
         <li>Asesoramiento Personalizado para armar tu PC ideal.</li>
+        <li>Reemplazo y ampliación de memoria RAM.</li>
+        <li>Instalación y actualización de discos (HDD / SSD / M.2).</li>
+        <li>Cambio de piezas dañadas (fuente, mother, cooler, etc.).</li>
+        <li>Diagnóstico de fallas de hardware.</li>
       </ul>
 
       <h2>💻 Servicio de Software</h2>
@@ -49,35 +48,31 @@
         <li>Formateo + Instalacion windows 10/11 + Instalacion de drivers.</li>
         <li>Instalacion de Programas(Office, drivers, etc).</li>
         <li>Recuperacion de archivos.</li>
+        <li>Eliminación de virus, malware y optimización del sistema.</li>
+        <li>Creación de copias de seguridad automáticas.</li>
+        <li>Configuración de correos y cuentas en PC.</li>
       </ul>
     </main>
 
-    <footer>
-      <h2>© ServiTec 2025. Todos los derechos reservados.</h2>
+    <footer class="flex2">
+      <h2 class="title">© ServiTec 2025. Todos los derechos reservados.</h2>
 
       <nav>
         <ul>
           <li>
-            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank" class="nav2">Instagram</a>
           </li>
           <li>
-            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank" class="nav2">Facebook</a>
           </li>
           <li>
-            <a href="#" target="_blank">WhatsApp</a>
+            <a href="#" target="_blank" class="nav2">WhatsApp</a>
           </li>
           <li>
-            <a href="#" target="_blank">Youtube</a>
+            <a href="#" target="_blank" class="nav2">Youtube</a>
           </li>
         </ul>
       </nav>
     </footer>
-
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById("menu");
-        menu.classList.toggle("show");
-      }
-    </script>
   </body>
 </html>

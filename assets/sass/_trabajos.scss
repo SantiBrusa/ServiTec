@@ -1,0 +1,42 @@
+@use "variables" as v;
+
+.trab-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    margin: 20px;
+    text-decoration: underline;
+    font-family: v.$font;
+  }
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80vh;
+    gap: 20px;
+    img {
+      width: 20vw;
+      margin: 10px;
+    }
+  }
+
+  @include v.tablet {
+    .galeria {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 40vh;
+      img {
+        width: 25vw;
+      }
+    }
+  }
+
+  @include v.mobile {
+    .galeria {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 70vh;
+      img {
+        width: 80vw;
+      }
+    }
+  }
+}

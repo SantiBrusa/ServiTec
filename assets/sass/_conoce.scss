@@ -1,0 +1,32 @@
+@use "variables" as v;
+
+.conoce-main {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  @include v.obj-flex(flex, column, center, center);
+  h2 {
+    text-decoration: underline;
+    margin: 20px;
+    font-family: v.$font;
+  }
+  p {
+    font-family: v.$font;
+    color: v.$font-color1;
+    width: 40vw;
+    margin: 50px;
+    font-size: 1.1rem;
+  }
+  iframe {
+    margin: 20px;
+  }
+
+  @include v.mobile {
+    p {
+      width: 80vw;
+    }
+    iframe {
+      width: 80vw;
+    }
+  }
+}

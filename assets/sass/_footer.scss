@@ -1,0 +1,39 @@
+@use "variables" as v;
+
+.flex2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: v.$colorsec;
+  .title {
+    font-family: v.$font;
+    color: v.$font-color1;
+    margin: 10px;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    li {
+      .nav2 {
+        @extend %navegacion;
+        &:hover {
+          @extend %navegacion-hover;
+        }
+      }
+    }
+  }
+
+  @include v.mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      text-align: center;
+    }
+    ul {
+      gap: 15px;
+    }
+  }
+}

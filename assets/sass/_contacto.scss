@@ -1,0 +1,60 @@
+@use "variables" as v;
+
+.contacto-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    margin: 20px;
+    font-family: v.$font;
+  }
+  p {
+    width: 30vw;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 30px;
+    font-family: v.$font;
+    color: v.$font-color1;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .item {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      align-items: center;
+      label {
+        font-family: v.$font;
+        text-decoration: underline;
+        font-size: larger;
+        margin: 10px;
+      }
+      input {
+        padding: 10px;
+      }
+      textarea {
+        padding: 20px;
+      }
+    }
+    .buttoms {
+      display: flex;
+      gap: 50px;
+      input {
+        font-family: v.$font;
+        color: v.$font-color1;
+        padding: 10px;
+        font-size: larger;
+        background-color: black;
+      }
+    }
+  }
+
+  @include v.mobile {
+    p {
+      width: 80vw;
+    }
+  }
+}

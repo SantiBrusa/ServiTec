@@ -1,0 +1,31 @@
+@use "variables" as v;
+
+.class-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .carousel {
+    width: 40vw;
+    margin: 10px;
+  }
+  .main-texts {
+    font-family: v.$font;
+    color: v.$font-color1;
+  }
+
+  @include v.mobile {
+    flex-direction: column;
+    gap: 50px;
+    .carousel {
+      width: 95vw;
+    }
+  }
+
+  @include v.tablet {
+    flex-direction: column;
+    gap: 50px;
+    .carousel {
+      width: 95vw;
+    }
+  }
+}

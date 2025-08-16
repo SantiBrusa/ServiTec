@@ -9,28 +9,23 @@
   </head>
 
   <body>
-    <header>
+    <header class="flex">
       <a href="../../index.html"
         ><img
           src="../img/logopng.png"
           alt="Logo de ServiTec"
           title="Logo de ServiTec"
+          class="logito"
       /></a>
 
-      <h1>ServiTec</h1>
-
-      <div class="hamburger" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <h1 class="title">ServiTec</h1>
 
       <nav>
-        <ul id="menu">
-          <li><a href="./servicios.html">Servicios</a></li>
-          <li><a href="./trabajos.html">Trabajos</a></li>
-          <li><a href="./conoce.html">Conoce ServiTec</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
+        <ul>
+          <li><a href="./servicios.html" class="nav">Servicios</a></li>
+          <li><a href="./trabajos.html" class="nav">Trabajos</a></li>
+          <li><a href="./conoce.html" class="nav">Conoce ServiTec</a></li>
+          <li><a href="./contacto.html" class="nav">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -50,34 +45,39 @@
         clientes, basadas en la confianza y la calidad. Porque en ServiTec, tu
         equipo es tan importante como el nuestro.
       </p>
+
+      <h2>Ubicacion</h2>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d257.0521191758263!2d-63.723669813795446!3d-29.908446669513843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1755309952258!5m2!1ses-419!2sar"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </main>
 
-    <footer>
-      <h2>© ServiTec 2025. Todos los derechos reservados.</h2>
+    <footer class="flex2">
+      <h2 class="title">© ServiTec 2025. Todos los derechos reservados.</h2>
 
       <nav>
         <ul>
           <li>
-            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank" class="nav2">Instagram</a>
           </li>
           <li>
-            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank" class="nav2">Facebook</a>
           </li>
           <li>
-            <a href="#" target="_blank">WhatsApp</a>
+            <a href="#" target="_blank" class="nav2">WhatsApp</a>
           </li>
           <li>
-            <a href="#" target="_blank">Youtube</a>
+            <a href="#" target="_blank" class="nav2">Youtube</a>
           </li>
         </ul>
       </nav>
     </footer>
-
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById("menu");
-        menu.classList.toggle("show");
-      }
-    </script>
   </body>
 </html>

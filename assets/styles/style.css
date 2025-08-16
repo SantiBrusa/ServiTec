@@ -1,342 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header {
+body {
+  background-color: gray;
+}
+
+.flex2 ul li .nav2, .flex ul li .nav {
+  font-family: "Rowdies", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.flex2 ul li .nav2:hover, .flex ul li .nav:hover {
+  color: yellow;
+  border: 1px solid yellow;
+  padding: 10px;
+}
+
+.flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: cadetblue;
-  width: auto;
-  height: 10vh;
 }
-
-header img {
-  width: 4vw;
-  height: auto;
-  margin: 1vw;
+.flex .logito {
+  width: 5vw;
 }
-
-h1 {
-  color: #fff;
+.flex .title {
   text-decoration: underline;
-  margin: 1vw;
+  font-family: "Rowdies", sans-serif;
+  color: white;
 }
-
-ul {
-  list-style: none;
-  margin: 1vw;
+.flex ul {
   display: flex;
+  list-style: none;
+  gap: 20px;
+}
+@media (max-width: 480px) {
+  .flex {
+    flex-direction: column;
+  }
+  .flex .logito {
+    width: 6vh;
+  }
+  .flex ul {
+    justify-content: start;
+    gap: 15px;
+  }
 }
 
-header a {
-  text-decoration: none;
-  color: black;
-  font-size: 1em;
+.flex2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: cadetblue;
+}
+.flex2 .title {
+  font-family: "Rowdies", sans-serif;
+  color: white;
   margin: 10px;
 }
-
-footer {
+.flex2 ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: cadetblue;
-  height: 10vh;
+  list-style: none;
+  gap: 20px;
 }
-
-footer h2 {
-  color: #fff;
-  padding: 1vw;
-  margin: 20px;
+@media (max-width: 480px) {
+  .flex2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex2 .title {
+    text-align: center;
+  }
+  .flex2 ul {
+    gap: 15px;
+  }
 }
-
-footer a {
-  text-decoration: none;
-  color: black;
-  font-size: 1em;
-  margin: 20px;
-}
-
-/* main index */
 
 .class-main {
   display: flex;
-  width: auto;
-  height: 80vh;
-  background-color: rgb(150, 150, 150);
-  justify-content: center;
-  flex-direction: row;
-}
-
-.class-main img {
-  width: auto;
-  height: 65vh;
-  margin: 20px;
-}
-
-.class-main p {
-  padding: 1vh;
-  color: black;
-}
-
-.main-texts {
-  display: flex;
-  flex-direction: column;
-  margin: 150px 20px;
-}
-
-.carousel {
-  width: 50vw;
-  height: 70vh;
-  overflow: hidden;
-}
-
-.carousel-inner,
-.carousel-item,
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-}
-
-/* main trabajos */
-
-.trab-main {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  background-color: rgb(150, 150, 150);
+}
+.class-main .carousel {
+  width: 40vw;
+  margin: 10px;
+}
+.class-main .main-texts {
+  font-family: "Rowdies", sans-serif;
+  color: white;
+}
+@media (max-width: 480px) {
+  .class-main {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .class-main .carousel {
+    width: 95vw;
+  }
+}
+@media (max-width: 980px) {
+  .class-main {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .class-main .carousel {
+    width: 95vw;
+  }
 }
 
-.trab-main h2 {
-  padding: 1vh;
-  font-size: 2em;
+.conoce-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.conoce-main h2 {
   text-decoration: underline;
   margin: 20px;
+  font-family: "Rowdies", sans-serif;
 }
-
-.class-trab-img {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  gap: 7vw;
+.conoce-main p {
+  font-family: "Rowdies", sans-serif;
+  color: white;
+  width: 40vw;
+  margin: 50px;
+  font-size: 1.1rem;
 }
-
-.class-trab-img img {
-  width: 20vw;
+.conoce-main iframe {
+  margin: 20px;
 }
-
-/* main Servicios */
+@media (max-width: 480px) {
+  .conoce-main p {
+    width: 80vw;
+  }
+  .conoce-main iframe {
+    width: 80vw;
+  }
+}
 
 .serv-main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: auto;
-  height: 80vh;
-  background-color: rgb(150, 150, 150);
 }
-
 .serv-main h2 {
-  padding: 10px;
-}
-
-.serv-main ul {
-  display: flex;
-  flex-flow: column wrap;
-  list-style: inside;
-}
-
-.serv-main li {
   margin: 20px;
+  font-family: "Rowdies", sans-serif;
+}
+.serv-main ul {
+  margin: 30px;
+}
+.serv-main ul li {
+  margin: 20px;
+  font-family: "Rowdies", sans-serif;
+  color: white;
+  font-size: 0.8rem;
 }
 
-/* main Conoce */
-
-.conoce-main {
+.trab-main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: auto;
-  height: 80vh;
-  background-color: rgb(150, 150, 150);
 }
-
-.conoce-main h2 {
+.trab-main h2 {
   margin: 20px;
+  text-decoration: underline;
+  font-family: "Rowdies", sans-serif;
 }
-
-.conoce-main p {
-  margin: 20px 250px;
+.trab-main .galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80vh;
+  gap: 20px;
 }
-
-/* main contacto */
+.trab-main .galeria img {
+  width: 20vw;
+  margin: 10px;
+}
+@media (max-width: 980px) {
+  .trab-main .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40vh;
+  }
+  .trab-main .galeria img {
+    width: 25vw;
+  }
+}
+@media (max-width: 480px) {
+  .trab-main .galeria {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 70vh;
+  }
+  .trab-main .galeria img {
+    width: 80vw;
+  }
+}
 
 .contacto-main {
-  width: auto;
-  height: 80vh;
-  background-color: rgb(150, 150, 150);
-}
-
-.contacto-main form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+}
+.contacto-main h2 {
+  margin: 20px;
+  font-family: "Rowdies", sans-serif;
+}
+.contacto-main p {
+  width: 30vw;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 30px;
+  font-family: "Rowdies", sans-serif;
+  color: white;
+}
+.contacto-main .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.contacto-main .formulario .item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+}
+.contacto-main .formulario .item label {
+  font-family: "Rowdies", sans-serif;
   text-decoration: underline;
-  font-size: 1.2rem;
+  font-size: larger;
+  margin: 10px;
 }
-
-.contacto-main label,
-input,
-textarea {
-  margin: 1vh 1vw;
-  padding: 1vh;
+.contacto-main .formulario .item input {
+  padding: 10px;
 }
-
-/* Media Queries */
-
-@media (max-width: 944px) {
-  /* main */
-  .class-main {
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-  }
-
-  .main-texts {
-    align-items: center;
-  }
-
-  header img {
-    width: 8vw;
-  }
-
-  .carousel {
-    width: 97vw;
-    height: 70vh;
-  }
-
-  /* Menú hamburguesa */
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    transition: 0.4s;
-  }
-
-  header nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: cadetblue;
-    position: fixed;
-    top: 10vh;
-    right: 0;
-    width: 100%;
-    z-index: 9999;
-    align-items: center;
-  }
-
-  header nav a {
-    font-size: 1.4rem;
-  }
-
-  header nav ul.show {
-    display: flex;
-  }
-
-  footer {
-    flex-direction: column;
-    height: auto;
-  }
-
-  /* Trabajos */
-
-  .class-trab-img {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .class-trab-img img {
-    width: 40vw;
-  }
-
-  /* conoce */
-
-  .conoce-main {
-    height: 80vh;
-  }
-
-  .conoce-main p {
-    margin: 20px 20px;
-  }
+.contacto-main .formulario .item textarea {
+  padding: 20px;
 }
-
+.contacto-main .formulario .buttoms {
+  display: flex;
+  gap: 50px;
+}
+.contacto-main .formulario .buttoms input {
+  font-family: "Rowdies", sans-serif;
+  color: white;
+  padding: 10px;
+  font-size: larger;
+  background-color: black;
+}
 @media (max-width: 480px) {
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    margin-right: 2vw;
-  }
-
-  .hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    transition: 0.4s;
-  }
-
-  header nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: cadetblue;
-    position: fixed;
-    top: 10vh;
-    right: 0;
-    width: 100%;
-    z-index: 9999;
-  }
-
-  header nav a {
-  }
-
-  header nav ul.show {
-    display: flex;
-  }
-
-  /* Main */
-
-  .carousel {
-    width: 97vw;
-    height: 50vh;
-  }
-
-  /* Trabajos */
-
-  .class-trab-img {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .class-trab-img img {
-    width: 60vw;
-  }
-
-  /* Conoce */
-
-  .conoce-main {
-    height: 80vh;
-  }
-
-  .conoce-main p {
-    margin: 20px 20px;
+  .contacto-main p {
+    width: 80vw;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

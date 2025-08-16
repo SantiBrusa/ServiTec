@@ -1,0 +1,20 @@
+@use "variables" as v;
+
+.serv-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    margin: 20px;
+    font-family: v.$font;
+  }
+  ul {
+    margin: 30px;
+    li {
+      margin: 20px;
+      font-family: v.$font;
+      color: v.$font-color1;
+      font-size: 0.8rem;
+    }
+  }
+}
