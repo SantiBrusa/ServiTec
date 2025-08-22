@@ -53,8 +53,12 @@
   }
 
   @include v.mobile {
+    h2 {
+      font-size: 1.7rem;
+    }
     p {
       width: 80vw;
+      font-size: 1.2rem;
     }
   }
 }
